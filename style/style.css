@@ -1,0 +1,87 @@
+@import url("/style/burger.css");
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px -60px;
+  padding: 20px 0;
+}
+.item {
+  padding: 20px 0;
+  text-align: center;
+  box-sizing: border-box;
+  width: calc(100% / 12 * 4 - 30px);
+  margin: 15px;
+}
+.items {
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px;
+}
+.menu {
+  display: flex;
+  color: white;
+}
+.left-menu {
+  font-size: 24px;
+}
+.left {
+  font-weight: 600;
+  color: rgb(101, 105, 126);
+}
+@media screen and (min-width: 1026px) {
+  .mobile-menu__checkbox {
+    display: none;
+  }
+}
+@media screen and (max-width: 920px) {
+  .item {
+    width: calc(100% / 12 * 6 - 30px);
+  }
+}
+@media screen and (max-width: 720px) {
+  .item {
+    width: calc(100% - 10px);
+  }
+}
+header {
+  width: 100%;
+  position: fixed;
+}
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(41, 44, 71);
+  color: white;
+  padding: 10px;
+  margin: -8px;
+}
+
+.right-menu,
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  padding: 0 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.right-menu {
+  list-style-type: none;
+  padding-right: 20px;
+}
+.menu {
+  padding-left: 20px;
+}
+.sample {
+  padding: 20px 20px;
+}
